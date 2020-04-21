@@ -12,6 +12,8 @@
   "author": "Oleg Ruzhytskyi",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "package": "^1.0.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
@@ -30,5 +32,13 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szymonBDaftAcademy/zadanie2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/szymonBDaftAcademy/zadanie2/issues"
+  },
+  "homepage": "https://github.com/szymonBDaftAcademy/zadanie2#readme"
 }
