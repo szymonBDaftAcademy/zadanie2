@@ -8,7 +8,8 @@
 
 body
   font-family: "Red Hat Display", Arial
-  height: 1000vh
+  height: 100vh
+  min-width: 375px
 
 header
   background-image: url("../assets/1920x550.png")
@@ -29,30 +30,91 @@ header
   left: 50%
   transform: translate(-50%, -50%)
 
+.carousel
+  overflow: hidden
+
 .caro
+  padding: 50px 15px 70px 15px 
   background-color: #263a49
-  height: 438px
-  display: flex
+  height: 424px
+  min-width: 100%
+  display: inline-flex
   justify-content: center
   align-items: center
   align-content: center
 
-.arrivals
-  height: 256px
-  font-size: 48px
+.caro-in
+  margin: 0 auto
+  
+  
+.caro-in .row
+  flex-wrap: nowrap
+
+.caro-in img
+  width: 100%
+  min-width: 241px
+  height: auto
+
+.caro-in .row .col p
+  position: absolute
+  left: 30px
+
+.caro-in .row .col p.name
+  bottom: 25px
+
+.caro-in .row .col p.cost
+  bottom: 0px
+
+.arrow
+  display: none
+  margin: 0 20px 0 10px
+  width: 48px
+  height: 48px
+  border: 1px solid white
   text-align: center
-  line-height: 256px
+  line-height: 48px
+  color: white
+
+.arrivals
+  height: 128px
+  font-size: 24px
+  text-align: center
+  line-height: 128px
+
+.arrivals-gallery .row
+  margin-bottom: 30px
+
+.arrivals-gallery .col-sm
+  padding-left: 1px
+  padding-right: 1px
+
+.arrivals-gallery .product
+  height: 504px
+
+.arrivals-gallery img
+  width: 100%
+  height: auto
+  margin-bottom: 25px
+
+.arrivals-gallery button
+  margin: 0 auto 100px auto
+  display: block
+  width: 136px
+  height: 48px
+  border: 2px solid black
+  background-color: white
 
 
-
-
-
-
-// @media (min-width: 576px)
+@media (min-width: 576px)
+  .arrivals-gallery .col-sm
+    padding-left: 15px
+    padding-right: 15px
   
 
 // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px)
+@media (min-width: 768px)
+  .caro
+    height: 438px
   
 
 // Large devices (desktops, 992px and up)
@@ -63,4 +125,12 @@ header
 @media (min-width: 1200px)
   .navbar
     margin-left: 15.5vw
+
+  .arrow
+    display: inline-block
+
+  .arrivals
+    height: 256px
+    font-size: 48px
+    line-height: 256px
   
