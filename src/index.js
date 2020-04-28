@@ -1,4 +1,10 @@
 import './styles/style.sass'
-// import script from './script'
+import scroll from './scripts/scrollToTop'
+import expand from './scripts/allProducts'
+import year from './scripts/currentYear'
 
-// script()
+document.addEventListener('DOMContentLoaded', () => {
+  scroll()
+  expand()
+  year()
+})

@@ -12,6 +12,7 @@
   "author": "Oleg Ruzhytskyi",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1",
     "package": "^1.0.1",
     "webpack": "^4.42.1",
